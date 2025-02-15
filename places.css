@@ -1,0 +1,71 @@
+header{
+    position: static;
+}
+body{
+    background: linear-gradient(45deg,rgb(77,77,77),rgb(58,58,58));
+    color:rgb(68,68,68)
+}
+main li img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+
+}
+main a{
+    text-decoration: none;
+    font-weight: bold;
+}
+#page-logo a{
+    color:rgb(183, 230, 235);
+}
+header li a{
+    color:rgb(183, 230, 235);
+}
+header li a:hover{
+    background-color: rgb(183, 230, 235);
+    color:rgb(59, 59, 59);
+}
+main li{
+    width: 600px;
+    background-color: white;
+    display: flex;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    transition: ease-in-out 0.8s;
+}
+.item-content{
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.actions {
+    text-align: right;
+}
+.actions a{
+    color:rgb(22, 228, 211);
+    padding: 0.5rem;
+    border-radius: 6px;
+}
+ .actions a:hover{
+    background-color: rgb(235,253, 258);
+ }
+
+ main ul{
+    display: grid;
+    margin:0 auto 48px auto;
+    width: 1200px;
+    grid-template-columns: repeat(2,1fr);
+    gap:30px 30px;
+ }
+ li:nth-of-type(3){
+    grid-column: 1 / 3;
+    width: max-content;
+ }
+ main li:hover{
+    transform: scale(1.03);
+ }
